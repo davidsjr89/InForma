@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\InForma\\InForma\\InForma\\InForma.csproj": {}
+    "C:\\Projetos\\inForma\\InForma\\InForma\\InForma\\InForma.csproj": {}
   },
   "projects": {
-    "C:\\InForma\\InForma\\InForma\\InForma.csproj": {
+    "C:\\Projetos\\inForma\\InForma\\InForma\\InForma\\InForma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\InForma\\InForma\\InForma\\InForma.csproj",
+        "projectUniqueName": "C:\\Projetos\\inForma\\InForma\\InForma\\InForma\\InForma.csproj",
         "projectName": "InForma",
-        "projectPath": "C:\\InForma\\InForma\\InForma\\InForma.csproj",
-        "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\InForma\\InForma\\InForma\\obj\\",
+        "projectPath": "C:\\Projetos\\inForma\\InForma\\InForma\\InForma\\InForma.csproj",
+        "packagesPath": "C:\\Users\\rafan\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\inForma\\InForma\\InForma\\InForma\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rafan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
