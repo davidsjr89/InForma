@@ -4,42 +4,117 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InForma</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inForma</title>
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">InForma</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- TOP SIDE -->
+    <nav>
+        <div class="nav-wrapper" style="background-color: #af2405;">
+            <div class="row container">
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+                    <i class="material-icons">menu</i>
+                </a>
+                <a href="#" class="brand-logo"><img src="~/Imagens/informa.png" width="200" class="img-responsive"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Components</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CONTENT SIDE NAVBAR -->
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background" style="background-color: #af2405;">
+                    <img src="~/Imagens/icon-informa.png" width="80" style="position: relative; left: 180px; top: 40px;">
+                </div>
+                <a href="#!user"><img class="circle" src="~/Imagens/person.jpg"></a>
+                <a href="#!name"><span class="white-text name">Diego Magalhaes</span></a>
+                <a href="#!email"><span class="white-text email">Recepcionista - Unidade Osasco</span></a>
+            </div>
+        </li>
+        <li><a class="subheader">Modulos</a></li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header waves-effect waves-blue "><i class="material-icons" style="position: relative; left: 17px;">edit</i>Cadastro <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a class="waves-effect waves-blue" asp-area="" asp-controller="Home" asp-action="Unidade">Unidade</a></li>
+                        <li><a class="waves-effect waves-blue" asp-area="" asp-controller="Home" asp-action="Index">Modalidade</a></li>
+                        <li><a class="waves-effect waves-blue" asp-area="" asp-controller="Home" asp-action="Index">Tipo de Colaborador</a></li>
+                        <li><a class="waves-effect waves-blue" asp-area="" asp-controller="Home" asp-action="Index">Colaborador</a></li>
+                        <li><a class="waves-effect waves-blue" asp-area="" asp-controller="Home" asp-action="Index">Fornecedor</a></li>
+                        <li>
+                            <div class="divider"></div>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </li>
+        </ul>
+        <!-- FINAL MENU FINANCEIRO DROPDOWN -->
+
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header waves-effect waves-blue "><i class="material-icons" style="position: relative; left: 17px;">person_pin</i>Funcionario <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a class="waves-effect waves-blue" asp-controller="Home" asp-action="Index">Verificar tal coisa</a></li>
+                        <li><a class="waves-effect waves-blue" asp-controller="Home" asp-action="Index">Verificar tal coisa</a></li>
+                        <li><a class="waves-effect waves-blue" asp-controller="Home" asp-action="Index">Verificar tal coisa</a></li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- FINAL MENU FUNCIONARIO DROPDOWN -->
+
+        <li><a href="#!"><i class="material-icons">edit</i>Cadastro</a></li>
+        <li><a href="#!"><i class="material-icons">account_circle</i>Turmas</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Catraca</a></li>
+        <li><a class="waves-effect" href="#!">Cadastro ??</a></li>
+
+        <div class="col s12 l12 center" style="position: relative; top:280px;">
+            <img src="~/Imagens/churrosteam.png" width="100" class="img-responsive">
+        </div>
+    </ul>
+
+    <script src="js/site.js"></script>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019 - InForma - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    @*<footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2019 - InForma - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
